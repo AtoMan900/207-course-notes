@@ -94,7 +94,7 @@ Each group is assigned a number based on the order in which its open bracket app
 For this reason, the only group in the above example was group `1`, which we wrote as `\1` when we wanted to refer to it later in the regex.
 
 For example, `(([de])f)\2\1` will repeat both groups. The strings that match are:
-`dfddf` and `efeef`.
+"dfddf" and "efeef".
 
 - Group 1 corresponds to the `[de]f` part of the pattern
 
@@ -102,7 +102,7 @@ For example, `(([de])f)\2\1` will repeat both groups. The strings that match are
 
 To visually make it easier to see the matches, we can write them space-delimited as:
 
-`df d df` and  `ef e ef` to clearly see the repetition of the groups.
+`df d df` and `ef e ef` to clearly see the repetition of the groups.
 
 ## 14.4. Example: A Pattern for Java Instance Variable Names
 
@@ -137,14 +137,14 @@ With our regex in hand, we can try it out on a few examples:
 
 Here are some examples of strings which conform:
 
-`x`,  `numStudents`,  `obj1`
+"x",  "numStudents",  "obj1"
 
 Here are some examples of strings which do not conform:
 
-`Alphabet`,  `2ab`,  `next_value`
+"Alphabet",  "2ab",  "next_value"
 
 > Do any of these strings conform to our regex?
-> `z3333`,  `aBcB041`,  `78a`
+> "z3333", "aBcB041", "78a"
 
 
 ### 14.4.1. What if There Are No Anchors?
@@ -166,10 +166,10 @@ Here is a regular expression which has no anchors.
 
 Because there are no anchors, a string will conform to this regex if _any_ substring contained within it conforms to the regex.
 
-For example, the string `cCaA` conforms and so does `ABCcCcAa1A23`,
-since they both contain a substring, `cCcA`, that is consistent with the regex.
+For example, the string "cCaA" conforms and so does "ABCcCcAa1A23",
+since they both contain a substring, "cCcA", that is consistent with the regex.
 
-A string like `cCa1A` does not conform though, since the `1` is inconsistent with the pattern.
+A string like "cCa1A" does not conform though, since the "1" is inconsistent with the pattern.
 
 ## 14.5. Special symbols
 
@@ -191,9 +191,9 @@ For example, `[^aeiouAEIOU]` matches anything that _isn’t_ a vowel.
 ### 14.5.1 Escaping the Meaning of a Symbol
 
 What if we wanted to include a period in our conforming string?
-To match strings like `1.2` or `3.8` we need some way to force a period to be included.
+To match strings like "1.2" or "3.8" we need some way to force a period to be included.
 Since `.` matches any character, not just periods, we will have to *escape* the period by writing a backslash in front of it like this: `\.`.
-By escaping the period, we indicate that its special meaning should be ignored, and `\.` matches precisely a literal `.` character.
+By escaping the period, we indicate that its special meaning should be ignored, and `\.` matches precisely a literal "." character.
 
 So the regular expression that matches all single digit numbers followed by a single digit after the decimal looks like this: `[0-9]\.[0-9]`
 
@@ -202,7 +202,7 @@ So the regular expression that matches all single digit numbers followed by a si
 The `|` symbol means "or" and `&&` means the intersection of the range before the ampersands and
 the range that appears after.
 
-For example `[a-t&&r-z]` would only include the letters r, s, and t.
+For example `[a-t&&r-z]` would match only the strings "r", "s", and "t".
 
 > Note: different implementations of regex may support slightly different logical operators.
 
