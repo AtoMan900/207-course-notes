@@ -12,13 +12,12 @@ A regular expression (also called “regex”) is a sequence of characters that 
 We say that a regex _matches_ the set of strings that satisfy its pattern.
 Conversely, a string _conforms_ to a regex if it satisfies the pattern described by that regex.
 
-For example, `.` matches any character and `*` describes 0 or more of whatever is to the left of it. So the regular expression `.*o` matches any string that ends with an `o` including "hello", 123w@o", and "o".
-
-Consider the regular expression `.*o`.
-In this example:
+As an example, consider the regular expression `.*o`.
+In this regex:
 - the `.` matches any character,
 - the `*` indicates that the pattern requires zero or more occurrences of the preceding element (in this case, the `.`), and
 - the `o` matches the character `o`.
+
 Together, the full regex matches any string that ends with the letter `o`, such as "hello", "ceo", and "o".
 
 As this example demonstrates, regex give us a way to more concisely describe sets of strings that may be arbitrarily large!
