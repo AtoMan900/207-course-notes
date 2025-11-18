@@ -25,6 +25,8 @@ You may also download the files locally. There are various viewers available to 
 ### Module 4
 - [Chapter 12. Design Patterns](12-design-patterns.md)
 - [Chapter 13. Refactoring Techniques](13-refactoring-techniques.md)
+### Module 5
+- [Chapter 14. Regular Expressions](14-regular-expressions.md)
 
 ---
 
