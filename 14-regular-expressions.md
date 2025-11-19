@@ -33,7 +33,7 @@ Other examples include `[0-9]` or `\d` which both match any digit such as "0", "
 
 Postal codes in Toronto all start with `M` and then alternate between numbers and letters, with a space in the middle.
 For example, "M0A 1B2" is a Toronto postal code.
-To describe all Toronto postal codes, we can use the regular expression `M[0-9][A-Z] [A-Z][0-9][A-Z]`.
+To describe all Toronto postal codes, we can use the regular expression `M[0-9][A-Z] [0-9][A-Z][0-9]`.
 
 ## 14.3. Repeating Patterns with Quantifiers
 
